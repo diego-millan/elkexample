@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81043983-a4ea-42fe-a4cb-6b3b8d768b46" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/CursomcApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/Categoria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/Cidade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/Endereco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/Estado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/ItemPedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/ItemPedidoPK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/Pagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/PagamentoComBoleto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/PagamentoComCartao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/Pedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/enums/EstadoPagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/domain/enums/TipoCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/CategoriaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/CidadeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/ClienteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/EnderecoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/EstadoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/ItemPedidoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/PagamentoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/PedidoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/repositories/ProdutoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/resources/CategoriaResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/resources/ClienteResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/resources/exception/ResourceExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/resources/exception/StandardError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/services/CategoriaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/java/com/diegomillan/cursomc/services/ClienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/test/java/com/diegomillan/cursomc/CursomcApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1UX2mNQyhdlzRzgYYUfLkeCvmbv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MovieServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="elkexample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.elk.demo.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.elk.demo.service" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.elk.demo.service.MovieServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MovieServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81043983-a4ea-42fe-a4cb-6b3b8d768b46" name="Default Changelist" comment="" />
+      <created>1575488777875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575488777875</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
