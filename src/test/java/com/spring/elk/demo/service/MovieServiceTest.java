@@ -60,8 +60,11 @@ public class MovieServiceTest {
     @Test
     public void testByTitle() {
         Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
-                "Universal Studios", "13 Jun 1993");
+                "Universal Studios", "13-Jun 1993");
+        Movie movie2 = new Movie("101", "Jurassic Park - Lost Word", "Steven Spielberg",
+                "Universal Studios", "13-Jun 1997");
         movieService.save(movie);
         List<Movie> foundMovies = movieService.findByTitle("Jurassic Park");
+        Assert.assertEquals(foundMovies.size(), 1);
     }
 }
