@@ -8,6 +8,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -58,13 +61,41 @@ public class MovieServiceTest {
     }
 
     @Test
-    public void testByTitle() {
+    public void testFindByTitle() {
         Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
                 "Universal Studios", "13-Jun 1993");
         Movie movie2 = new Movie("101", "Jurassic Park - Lost Word", "Steven Spielberg",
                 "Universal Studios", "13-Jun 1997");
         movieService.save(movie);
+        movieService.save(movie2);
         List<Movie> foundMovies = movieService.findByTitle("Jurassic Park");
-        Assert.assertEquals(foundMovies.size(), 1);
+        Assert.assertEquals(foundMovies.size(), 2);
     }
+
+    @Test
+    public void testFindByStudio() {
+        Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
+                "Universal Studios", "13-Jun 1993");
+        Movie movie2 = new Movie("101", "Jurassic Park - Lost Word", "Steven Spielberg",
+                "Universal Studios", "13-Jun 1997");
+        movieService.save(movie);
+        movieService.save(movie2);
+        Page<Movie> foundMovies = movieService.findByStudio("Universal Studios",
+                PageRequest.of(0,10));
+        Assert.assertEquals(foundMovies.getTotalElements(), 2);
+    }
+
+    @Test
+    public void testFindByDirector() {
+        Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
+                "Universal Studios", "13-Jun 1993");
+        Movie movie2 = new Movie("101", "Jurassic Park - Lost Word", "Steven Spielberg",
+                "Universal Studios", "13-Jun 1997");
+        movieService.save(movie);
+        movieService.save(movie2);
+        Page<Movie> foundMovies = movieService.findByDirector("Spielberg",
+                PageRequest.of(0,10));
+        Assert.assertEquals(foundMovies.getTotalElements(), 2);
+    }
+
 }

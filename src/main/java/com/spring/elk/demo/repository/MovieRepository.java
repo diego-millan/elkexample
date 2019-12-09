@@ -12,4 +12,5 @@ public interface MovieRepository extends ElasticsearchRepository <Movie, String>
     List<Movie> findByTitle(String title);
     Page<Movie> findByDirector(String director, Pageable pageable);
     Page<Movie> findByStudio(String studio, Pageable pageable);
+
 }
