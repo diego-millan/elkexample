@@ -11,6 +11,8 @@ public interface MovieService {
 
     Movie save(Movie movie);
 
+    void saveAll(List<Movie> movies);
+
     void delete(Movie movie);
 
     Optional<Movie> findOne(String id);

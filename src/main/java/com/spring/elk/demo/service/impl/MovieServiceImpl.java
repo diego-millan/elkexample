@@ -23,6 +23,11 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
+    public void saveAll(List<Movie> movies) {
+        movieRepository.saveAll(movies);
+    }
+
+    @Override
     public void delete(Movie movie) {
         movieRepository.delete(movie);
     }
