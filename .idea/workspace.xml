@@ -4,8 +4,8 @@
     <list default="true" id="81043983-a4ea-42fe-a4cb-6b3b8d768b46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/elk/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/elk/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/elk/demo/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/elk/demo/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/elk/demo/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/elk/demo/service/impl/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/elk/demo/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/elk/demo/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/spring/elk/demo/service/MovieServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spring/elk/demo/service/MovieServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,10 +145,10 @@
       <screen x="-1080" y="-350" width="1080" height="1880" />
     </state>
     <state width="1037" height="615" key="GridCell.Tab.0.right/0.0.1280.680/-1080.-350.1080.1880@-1080.-350.1080.1880" timestamp="1575984391682" />
-    <state x="-844" y="413" key="com.intellij.ide.util.TipDialog" timestamp="1575997997734">
+    <state x="-844" y="413" key="com.intellij.ide.util.TipDialog" timestamp="1576239238449">
       <screen x="-1080" y="-350" width="1080" height="1880" />
     </state>
-    <state x="-844" y="413" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1080.-350.1080.1880@-1080.-350.1080.1880" timestamp="1575997997734" />
+    <state x="-844" y="413" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1080.-350.1080.1880@-1080.-350.1080.1880" timestamp="1576239238449" />
     <state x="-844" y="327" width="607" height="526" key="find.popup" timestamp="1575985084396">
       <screen x="-1080" y="-350" width="1080" height="1880" />
     </state>

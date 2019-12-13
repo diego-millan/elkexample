@@ -3,6 +3,8 @@ package com.spring.elk.demo.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+import java.util.Date;
+
 @Document(indexName = "myindex", type = "movies")
 public class Movie {
 
@@ -11,11 +13,11 @@ public class Movie {
     private String title;
     private String director;
     private String studio;
-    private String releaseDate;
+    private Date releaseDate;
 
     public Movie() {}
 
-    public Movie(String id, String title, String director, String studio, String releaseDate) {
+    public Movie(String id, String title, String director, String studio, Date releaseDate) {
         this.id = id;
         this.title = title;
         this.director = director;
@@ -55,11 +57,11 @@ public class Movie {
         this.studio = studio;
     }
 
-    public String getReleaseDate() {
+    public Date getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(String releaseDate) {
+    public void setReleaseDate(Date releaseDate) {
         this.releaseDate = releaseDate;
     }
 

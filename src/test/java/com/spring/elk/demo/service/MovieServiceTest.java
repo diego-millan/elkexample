@@ -14,6 +14,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Optional;
 
@@ -38,7 +40,7 @@ public class MovieServiceTest {
     @Test
     public void testSave() {
         Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
-                "Universal Studios", "13 Jun 1993");
+                "Universal Studios", new GregorianCalendar(1993, Calendar.JUNE, 13).getTime());
         Movie savedMovie = movieService.save(movie);
 
         Assert.assertNotNull(savedMovie);
@@ -50,7 +52,7 @@ public class MovieServiceTest {
     @Test
     public void testFindOne() {
         Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
-                "Universal Studios", "13 Jun 1993");
+                "Universal Studios", new GregorianCalendar(1993, Calendar.JUNE, 13).getTime());
         movieService.save(movie);
         Optional<Movie> foundMovie = movieService.findOne(movie.getId());
         Assert.assertEquals(foundMovie.get().getId(), movie.getId());
@@ -63,9 +65,9 @@ public class MovieServiceTest {
     @Test
     public void testFindByTitle() {
         Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
-                "Universal Studios", "13-Jun 1993");
+                "Universal Studios",new GregorianCalendar(1993, Calendar.JUNE, 13).getTime());
         Movie movie2 = new Movie("101", "Jurassic Park - Lost Word", "Steven Spielberg",
-                "Universal Studios", "13-Jun 1997");
+                "Universal Studios", new GregorianCalendar(1997, Calendar.JUNE, 13).getTime());
         movieService.save(movie);
         movieService.save(movie2);
         List<Movie> foundMovies = movieService.findByTitle("Jurassic Park");
@@ -75,9 +77,9 @@ public class MovieServiceTest {
     @Test
     public void testFindByStudio() {
         Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
-                "Universal Studios", "13-Jun 1993");
+                "Universal Studios", new GregorianCalendar(1993, Calendar.JUNE, 13).getTime());
         Movie movie2 = new Movie("101", "Jurassic Park - Lost Word", "Steven Spielberg",
-                "Universal Studios", "13-Jun 1997");
+                "Universal Studios", new GregorianCalendar(1997, Calendar.JUNE, 13).getTime());
         movieService.save(movie);
         movieService.save(movie2);
         Page<Movie> foundMovies = movieService.findByStudio("Universal Studios",
@@ -88,9 +90,9 @@ public class MovieServiceTest {
     @Test
     public void testFindByDirector() {
         Movie movie = new Movie("100", "Jurassic Park", "Steven Spielberg",
-                "Universal Studios", "13-Jun 1993");
+                "Universal Studios", new GregorianCalendar(1993, Calendar.JUNE, 13).getTime());
         Movie movie2 = new Movie("101", "Jurassic Park - Lost Word", "Steven Spielberg",
-                "Universal Studios", "13-Jun 1997");
+                "Universal Studios", new GregorianCalendar(1997, Calendar.JUNE, 13).getTime());
         movieService.save(movie);
         movieService.save(movie2);
         Page<Movie> foundMovies = movieService.findByDirector("Spielberg",

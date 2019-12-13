@@ -9,6 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 @SpringBootApplication
@@ -33,33 +35,33 @@ public class DemoApplication implements CommandLineRunner {
 		esTemplate.refresh(Movie.class);
 
 		Movie movie1 = new Movie("100", "Jurassic Park", "Steven Spielberg",
-				"Universal Studios", "13-Jun 1993");
+				"Universal Studios", new GregorianCalendar(1993, Calendar.JUNE, 13).getTime());
 		Movie movie2 = new Movie("101", "Jurassic Park - Lost Word", "Steven Spielberg",
-				"Universal Studios", "05-Dec 1997");
+				"Universal Studios", new GregorianCalendar(1997, Calendar.DECEMBER, 05).getTime());
 		Movie movie3 = new Movie("102", "Jurassic Park III", "Joe Johnston",
-				"Universal Studios", "07-Nov 2001");
+				"Universal Studios", new GregorianCalendar(2001, Calendar.NOVEMBER, 07).getTime());
 		Movie movie4 = new Movie("103", "Jurassic World", "Collin Trevorrow",
-				"Universal Studios", "12-Jul 2015");
+				"Universal Studios", new GregorianCalendar(2015, Calendar.JULY, 12).getTime());
 		Movie movie5 = new Movie("104", "Back To The Future", "Robert Zemeckis",
-				"Universal Studios", "02-Jun 1985");
+				"Universal Studios", new GregorianCalendar(1985, Calendar.JUNE, 02).getTime());
 		Movie movie6 = new Movie("105", "Forrest Gump", "Robert Zemeckis",
-				"Paramount Pictures", "04-Apr 1999");
+				"Paramount Pictures", new GregorianCalendar(1999, Calendar.APRIL, 04).getTime());
 		Movie movie7 = new Movie("106", "Fight Club", "David Fincher",
-				"Fox Pictures", "02-Dec 1999");
+				"Fox Pictures", new GregorianCalendar(1999, Calendar.DECEMBER, 02).getTime());
 		Movie movie8 = new Movie("107", " The Shawshank Redemption ", "Frank Darabont",
-				"Castle Rock", "14-Oct 1994");
+				"Castle Rock", new GregorianCalendar(1994, Calendar.OCTOBER, 14).getTime());
 		Movie movie9 = new Movie("108", "Schindler's List", "Steven Spielberg",
-				"Universal Studios", "04-Feb 1994");
+				"Universal Studios", new GregorianCalendar(1994, Calendar.FEBRUARY, 04).getTime());
 		Movie movie10 = new Movie("109", "The Lion King", "Roger Allers",
-				"Disney", "24-Jun 1994");
+				"Disney", new GregorianCalendar(1994, Calendar.JUNE, 24).getTime());
 		Movie movie11 = new Movie("110", "Pulp Fiction", "Quentin Tarantino",
-				"Miramax", "14-Oct 1994");
-		Movie movie12 = new Movie("111", "Star Wars: Episode V - The Empire Strikes Back",
-				"Irvin Kershner", "Lucas Film", "20-May 1980");
+				"Miramax", new GregorianCalendar(1994, Calendar.OCTOBER, 14).getTime());
+		Movie movie12 = new Movie("111", "Star Wars: Episode V - The Empire Strikes Back","Irvin Kershner",
+				"Lucas Film",  new GregorianCalendar(1980, Calendar.MAY, 20).getTime());
 		Movie movie13 = new Movie("112", "Star Wars: Episode IV - A New Hope", "George Lucas",
-				"Lucas Film", "13-May 1977");
+				"Lucas Film", new GregorianCalendar(1977, Calendar.MAY, 13).getTime());
 		Movie movie14 = new Movie("113", "Star Wars: Episode VI - Return of the Jedi", "Richard Marquand",
-				"Lucas Film", "25-May 1983");
+				"Lucas Film", new GregorianCalendar(1983, Calendar.MAY, 25).getTime());
 
 		List<Movie> movieList = Arrays.asList(movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8,
 				movie9, movie10, movie11, movie12, movie13, movie14);
