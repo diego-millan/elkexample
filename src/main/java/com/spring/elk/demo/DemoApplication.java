@@ -62,9 +62,15 @@ public class DemoApplication implements CommandLineRunner {
 				"Lucas Film", new GregorianCalendar(1977, Calendar.MAY, 13).getTime(), 6);
 		Movie movie14 = new Movie("113", "Star Wars: Episode VI - Return of the Jedi", "Richard Marquand",
 				"Lucas Film", new GregorianCalendar(1983, Calendar.MAY, 25).getTime(), 1);
+		Movie movie15 = new Movie("114", "The Lord of the Rings: The Fellowship of the Ring", "Peter Jackson",
+				"New Line Cinema", new GregorianCalendar(2000, Calendar.JANUARY, 1).getTime(), 4);
+		Movie movie16 = new Movie("115", "The Lord of the Rings: The Two Towers", "Peter Jackson",
+				"New Line Cinema", new GregorianCalendar(2002, Calendar.DECEMBER, 27).getTime(), 2);
+		Movie movie17 = new Movie("116", "The Lord of the Rings: The Return of the King", "Peter Jackson",
+				"New Line Cinema", new GregorianCalendar(2003, Calendar.DECEMBER, 25).getTime(), 11);
 
 		List<Movie> movieList = Arrays.asList(movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8,
-				movie9, movie10, movie11, movie12, movie13, movie14);
+				movie9, movie10, movie11, movie12, movie13, movie14, movie15, movie16, movie17);
 
 		movieService.saveAll(movieList);
 	}
