@@ -14,14 +14,16 @@ public class Movie {
     private String director;
     private String studio;
     private Date releaseDate;
+    private int oscars;
 
     public Movie() {}
 
-    public Movie(String id, String title, String director, String studio, Date releaseDate) {
+    public Movie(String id, String title, String director, String studio, Date releaseDate, int oscars) {
         this.id = id;
         this.title = title;
         this.director = director;
         this.studio = studio;
+        this.oscars = oscars;
         this.releaseDate = releaseDate;
     }
 
@@ -63,6 +65,14 @@ public class Movie {
 
     public void setReleaseDate(Date releaseDate) {
         this.releaseDate = releaseDate;
+    }
+
+    public int getOscars() {
+        return oscars;
+    }
+
+    public void setOscars(int oscars) {
+        this.oscars = oscars;
     }
 
     @Override
